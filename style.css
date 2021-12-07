@@ -1,0 +1,219 @@
+ .col-12 {
+        text-align: center;
+        height: 100px;
+        font-size: 75px;
+        color: black;
+        background-image: linear-gradient(to left, #7b4397, #dc2430);
+        font-family: 'Times New Roman';
+        border-radius: 8px;
+        position: sticky;
+   
+
+    }
+/* I just want to decorate my title so I used this effct */
+
+    .col-12:after {
+        --slice-0: inset(50% 50% 50% 50%);
+        --slice-1: inset(80% -6px 0 0);
+        --slice-2: inset(50% -6px 30% 0);
+        --slice-3: inset(10% -6px 85% 0);
+        --slice-4: inset(40% -6px 43% 0);
+        --slice-5: inset(80% -6px 5% 0);
+
+        content: 'MOBILE WORLD';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+        text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+        clip-path: var(--slice-0);
+    }
+
+    .col-12:hover:after {
+        animation: 1s glitch;
+        animation-timing-function: steps(2, end);
+    }
+
+    @keyframes glitch {
+        0% {
+            clip-path: var(--slice-1);
+            transform: translate(-20px, -10px);
+        }
+
+        10% {
+            clip-path: var(--slice-3);
+            transform: translate(10px, 10px);
+        }
+
+        20% {
+            clip-path: var(--slice-1);
+            transform: translate(-10px, 10px);
+        }
+
+        30% {
+            clip-path: var(--slice-3);
+            transform: translate(0px, 5px);
+        }
+
+        40% {
+            clip-path: var(--slice-2);
+            transform: translate(-5px, 0px);
+        }
+
+        50% {
+            clip-path: var(--slice-3);
+            transform: translate(5px, 0px);
+        }
+
+        60% {
+            clip-path: var(--slice-4);
+            transform: translate(5px, 10px);
+        }
+
+        70% {
+            clip-path: var(--slice-2);
+            transform: translate(-10px, 10px);
+        }
+
+        80% {
+            clip-path: var(--slice-5);
+            transform: translate(20px, -10px);
+        }
+
+        90% {
+            clip-path: var(--slice-1);
+            transform: translate(-10px, 0px);
+        }
+
+        100% {
+            clip-path: var(--slice-1);
+            transform: translate(0);
+        }
+    }
+
+
+    .col-md-9 {
+
+        background-color: rgb(236, 238, 237);
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .col-md-3 {
+        text-align: center;
+        height: 620px;
+        background-color: black;
+        margin-top: 5px;
+        border-radius: 8px;
+
+    }
+
+    .boxes {
+        background-color: white;
+        height: 450px;
+        width: 310px;
+        margin-left: 15px;
+        margin-top: 15px;
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+
+    #product {
+        background-color: white;
+        color: rgb(9, 9, 87);
+        font-size: 20px;
+        font-weight: bold;
+        margin: 6px;
+    }
+
+    #price {
+        background-color: white;
+        font-size: 20px;
+        font-weight: normal;
+        color: black;
+        margin: 6px;
+    }
+
+    .buttons {
+        background-image: linear-gradient(to left, #FF512F, #DD2476);
+        margin-left: 180px;
+        border-radius: 10px;
+        padding: 3px 9px;
+        cursor: pointer;
+        color: white;
+        opacity: 0.5;
+        transition: 300ms;
+        font-weight: bold;
+        text-align: center;
+        transition: all .15s;
+        font-family: Phantomsans, sans-serif;
+
+    }
+
+    .buttons:hover {
+        background-color: #FFC229;
+        box-shadow: #FF6314 0 -6px 8px inset;
+        transform: scale(1.125);
+        opacity: 100%;
+    }
+
+    .buttos:active {
+        transform: scale(1.025);
+    }
+
+
+    #image1 {
+        margin-top: 20px;
+    }
+
+    #head {
+        color: white;
+        height: 50px;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    #addtocart {
+        background-image: linear-gradient(to right, #ffd89b, #19547b);
+        font-size: 20px;
+        font-family: Verdana, Tahoma, sans-serif;
+        height: 500px;
+    }
+
+    #total {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        margin-bottom: 5px;
+        height: 39px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .product-Detail {
+        background-image: linear-gradient(to right, #4E65FF, #92EFFD);
+        height: 50px;
+        margin-top: 5px;
+        text-align: left;
+        padding: 7px;
+        transition-duration: 0.4s;
+        border-Radius: 35px 9px;
+
+    }
+
+    .Result {
+        margin-left: 80%;
+        border: none;
+        background: transparent;
+        font-size: 45px;
+        font-weight: 100px;
+        margin-top: -50px;
+        display: block;
+        cursor: pointer;
+
+    }
