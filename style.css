@@ -10,7 +10,7 @@
    
 
     }
-/* I just want to decorate my title so I used this effct */
+/* I just want to decorate my title so I used this effect */
 
     .col-12:after {
         --slice-0: inset(50% 50% 50% 50%);
